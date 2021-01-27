@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "provinces",
+  "info": {
+    "name": "Province",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "province_id": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "province_name": {
+      "type": "string"
+    },
+    "province_type": {
+      "type": "string"
+    }
+  }
+}

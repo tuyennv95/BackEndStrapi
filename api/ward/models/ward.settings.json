@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "wards",
+  "info": {
+    "name": "ward"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "ward_id": {
+      "type": "string",
+      "unique": true
+    },
+    "ward_name": {
+      "type": "string"
+    },
+    "ward_type": {
+      "type": "string"
+    },
+    "district_id": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/house-for-rents",
+      "handler": "house-for-rent.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/house-for-rents/count",
+      "handler": "house-for-rent.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/house-for-rents/:id",
+      "handler": "house-for-rent.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/house-for-rents",
+      "handler": "house-for-rent.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/house-for-rents/:id",
+      "handler": "house-for-rent.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/house-for-rents/:id",
+      "handler": "house-for-rent.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

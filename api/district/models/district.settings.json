@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "districts",
+  "info": {
+    "name": "District"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "district_id": {
+      "type": "string",
+      "unique": true
+    },
+    "district_name": {
+      "type": "string"
+    },
+    "district_type": {
+      "type": "string"
+    },
+    "province_id": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bills",
+  "info": {
+    "name": "bill",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "customer_name": {
+      "type": "string"
+    },
+    "userId": {
+      "type": "string"
+    },
+    "house_type": {
+      "type": "string"
+    },
+    "number_people": {
+      "type": "integer"
+    },
+    "house_name": {
+      "type": "string"
+    },
+    "houseId": {
+      "type": "string"
+    },
+    "price": {
+      "type": "biginteger"
+    },
+    "total_cost": {
+      "type": "biginteger"
+    },
+    "email": {
+      "type": "string"
+    },
+    "phoneNumber": {
+      "type": "string"
+    },
+    "checkIn": {
+      "type": "date"
+    },
+    "checkOut": {
+      "type": "date"
+    },
+    "time_booking": {
+      "type": "date"
+    },
+    "status_payment": {
+      "type": "boolean"
+    }
+  }
+}

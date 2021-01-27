@@ -1,0 +1,94 @@
+{
+  "kind": "collectionType",
+  "collectionName": "house_for_rents",
+  "info": {
+    "name": "house_for_rent",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "house_name": {
+      "type": "string",
+      "required": true
+    },
+    "price": {
+      "type": "biginteger",
+      "required": true
+    },
+    "number_of_bedroom": {
+      "type": "integer",
+      "required": true
+    },
+    "status": {
+      "type": "boolean"
+    },
+    "number_of_bathroom": {
+      "type": "integer",
+      "required": true
+    },
+    "people_max": {
+      "type": "integer"
+    },
+    "price_1_poeple_exceed": {
+      "type": "biginteger"
+    },
+    "address_ward": {
+      "type": "string",
+      "required": true
+    },
+    "img_avatar_house": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "img_house": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "utilities": {
+      "type": "json"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "people_number": {
+      "type": "integer",
+      "required": true
+    },
+    "bed_number": {
+      "type": "integer",
+      "required": true
+    },
+    "id_typehouse": {
+      "type": "string"
+    },
+    "districts_id": {
+      "type": "string",
+      "required": true
+    },
+    "provinces_id": {
+      "type": "string"
+    },
+    "avatar_id": {
+      "type": "string"
+    },
+    "img_houses": {
+      "type": "json"
+    }
+  }
+}
