@@ -84,11 +84,11 @@
     "provinces_id": {
       "type": "string"
     },
-    "avatar_id": {
-      "type": "string"
+    "acreage": {
+      "type": "integer"
     },
-    "img_houses": {
-      "type": "json"
+    "keySearch": {
+      "type": "text"
     }
   }
 }
